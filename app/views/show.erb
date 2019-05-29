@@ -1,0 +1,12 @@
+<div>
+  <h2><%= recipe.name %></h2>
+  <span><%= recipe.ingredients %></span>
+  <span><%= recipe.cook_time %></span>
+  <a href="/recipes">All Recipes</a>
+
+  <form action="/recipes/<%= recipe.id %>" method="post">
+    <input type="text" name="_method" value="delete">
+    <button type="submit" >delete</button>
+  </form>
+
+</div>
