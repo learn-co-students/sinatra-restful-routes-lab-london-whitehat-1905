@@ -1,0 +1,9 @@
+<span><%= recipe.ingredients %></span>
+
+<form class="" action="/recipes/<%= recipe.id %>/edit" method="post">
+  <input type="text" name="_method" value="patch">
+  <input type="text" name="name" value="">
+  <input type="text" name="ingredients" value="">
+  <input type="text" name="cook_time" value="">
+  <button type="submit">Edit</button>
+</form>
